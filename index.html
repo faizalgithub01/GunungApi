@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OL Training</title>
+    <link rel="stylesheet" href="resources/ol6/ol.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="grid-container">
+        <div id="grid1">
+            <h2>Base Layers</h2>
+            <input type="radio" name="baseLayerRadioButton" value="OSMLayer" checked>OSM Layer<br>
+            <input type="radio" name="baseLayerRadioButton" value="BingMapLayer" >Bing Map Layer <br>
+            <input type="radio" name="baseLayerRadioButton" value="StamenLayer" >Stamen Layer <br>
+            <input type="radio" name="baseLayerRadioButton" value="StamenXYZLayer" >Stamen XYZ Layer <br>
+            <input type="radio" name="baseLayerRadioButton" value="CartoDBLayer" >CartoDB Layer <br>
+
+            <h2>Overlay Layers</h2>
+            <input type="checkbox" name="overlayLayerCheckBox" value="ArcGISRestLayer">ArcGIS Rest Layer<br>
+            <input type="checkbox" name="overlayLayerCheckBox" value="TileWMSLayer">TileWMS Layer<br>
+            <input type="checkbox" name="overlayLayerCheckBox" value="TileDebugLayer">Tile Debug Layer<br>
+        </div>
+        <div id="grid2">
+            <div id="map"></div>
+        </div>
+    </div>
+    
+
+    <script src="resources/ol6/ol.js"></script>
+    <script src="mains.js"></script>
+</body> 
+</html>
